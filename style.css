@@ -189,10 +189,6 @@ footer cite {
 
 @media only screen and (max-width: 768px) {
 
-    main {
-        width: 87.5%;
-    }
-
     #subtitulo-do-site {
         margin: 0px 20px 15px 20px;
     }
