@@ -1,0 +1,235 @@
+/* Versão para PC */
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #E9E6C3;
+}
+
+header {
+    background-image: linear-gradient(to top, #043C1C, #0fb158 );
+    color: #fff;
+}
+
+#tema-central, #subtitulo-do-site {
+    text-align: center;
+    padding-top: 35px;
+    text-shadow: 0.5px 0.2px 5px rgba(0, 0, 0, 0.342);
+}
+
+#tema-central {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#subtitulo-do-site {
+    font-size: 16px;
+}
+
+nav {
+    margin-top: 30px;
+    margin-left: 12px;
+    padding-bottom: 10px;
+}
+
+nav li {
+    display: inline;
+    padding: 7px;
+    transition: all 0.5s;
+}
+
+nav li:hover {
+    background-color: #2fa86591;
+    padding: 11px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+main {
+    display: table;
+    background-color: #fff;
+    margin: auto;
+    width: 65%;
+    padding: 30px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 1px 5px 0.5px rgba(0, 0, 0, 0.247);
+}
+
+.topicos {
+    font-family: 'idroid', sans-serif;
+    margin: 15px 0px 20px 0px;
+}
+
+.subtitulos {
+    background-color: #A4E9C1;
+    padding: 0px 0px 0px 10px;
+}
+
+p {
+    text-indent: 3%;
+    line-height: 1.8em;
+    margin: 20px 0px 25px 0px;
+    text-align: justify;
+} 
+
+.links-recomendados {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #043C1C;
+    transition: all 0.1s;
+}
+
+.links-recomendados:hover {
+    background-color: #043C1C; 
+    color: white;  
+    padding: 1px;
+}
+
+.links-recomendados::after {
+    margin-left: 3px;
+    content: "\1F517"; 
+}
+
+#caixa {
+    background-color: #C5EBD6;
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.459);
+    margin: 15px 0px 0px 0px;
+}
+
+#lista-android {
+    columns: 2;
+    margin: 0px 0px 0px 25px;
+}
+
+.lista {
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+    color: #175C34;
+    list-style-type: none;
+}
+
+.lista abbr {
+    text-decoration: underline dotted;
+}
+
+.lista::before {
+    counter-increment: 1.5;
+    content: '\2714';
+    padding: 10px;
+}
+
+h4 {
+    background-color: #2FA866;
+    color: white;
+    margin: -10px 0px 0px -12px;
+    padding: 8px;
+    border-radius: 6px 6px 0px 0px;
+    width: 100.9%;
+}
+
+img {
+    display: table-cell;
+    margin: auto;
+    max-width: 100%;
+}
+
+iframe {
+    display: flex;
+    margin: auto;
+    border: 10px solid #043C1C;
+    border-left: 30px solid #043C1C;
+    border-right: 30px solid #043C1C;
+    width: 480px;
+    height: 385px;
+}
+
+footer {
+    background-color: #1A5A37;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer cite {
+    text-align: center;
+    font-size: 13px;
+}
+
+#autor {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 0px 0px 0px 3px;
+}   
+
+#autor::after {
+    margin-left: 3px;
+    content: "\1F517"; 
+}
+
+#autor:hover {
+    background-color: #043C1C; 
+    color: white;  
+    padding: 2px 5px 5px 5px;
+    font-weight: bolder;
+}
+
+/* Versão para celular */
+
+@media only screen and (max-width: 768px) {
+
+    main {
+        width: 87.5%;
+    }
+
+    #subtitulo-do-site {
+        margin: 0px 20px 15px 20px;
+    }
+
+    .topicos {
+        font-size: 21px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .subtitulos {
+        font-size: 16px;
+    }
+
+    p {
+        text-align: justify;
+        text-indent: 6%;
+    }
+
+    #caixa {
+        margin: 15px 0px 0px 0px;
+        text-align: left;
+    }
+
+    #caixa p {
+        margin: 20px 15px 20px 0px;
+    }
+
+    iframe {
+        display: flex;
+        margin: auto;
+        border: 10px solid #043C1C;
+        border-left: 30px solid #043C1C;
+        border-right: 30px solid #043C1C;
+        width: 370px;
+        height: 315px;
+    }
+}
