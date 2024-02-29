@@ -55,7 +55,7 @@ nav li:hover {
 }
 
 main {
-    display: table;
+    display: block;
     background-color: #fff;
     margin: auto;
     width: 65%;
