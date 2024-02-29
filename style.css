@@ -55,7 +55,7 @@ nav li:hover {
 }
 
 main {
-    display: block;
+    display: table;
     background-color: #fff;
     margin: auto;
     width: 65%;
@@ -189,6 +189,15 @@ footer cite {
 
 @media only screen and (max-width: 768px) {
 
+    body {
+        overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+    }
+
+    main {
+        width: 90%; /* Ajusta a largura do conteúdo principal */
+        padding: 20px; /* Ajusta o espaçamento */
+    }
+
     #subtitulo-do-site {
         margin: 0px 20px 15px 20px;
     }
@@ -198,8 +207,9 @@ footer cite {
     }
 
     nav {
-        width: 12px;
+        font-size: 12px;
         text-align: center;
+        margin-left: 0;
     }
 
     .subtitulos {
@@ -226,7 +236,7 @@ footer cite {
         border: 10px solid #043C1C;
         border-left: 30px solid #043C1C;
         border-right: 30px solid #043C1C;
-        width: 370px;
-        height: 315px;
+        width: auto;
+        height: auto;
     }
 }
